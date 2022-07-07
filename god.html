@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="buttons">
+        <button type="button" class="btn btn-light" onclick="parent.location='index.html'">All</button>
+        <button type="button" class="btn btn-light" onclick="parent.location='nature.html'">Nature</button>
+        <button type="button" class="btn btn-light" onclick="parent.location='animals.html'">Animals</button>
+        <button type="button" class="btn btn-light" onclick="parent.location='birds.html'">Birds</button>
+        <button type="button" class="btn btn-light" onclick="parent.location='god.html'">God</button>
+    </div>
+
+    <div class="gallery">
+        <a href="img/ganeshji.jpg">
+            <img src="img/ganeshji.jpg" alt="img1">
+        </a>
+        <a href="img/shiv.jpg">
+            <img src="img/shiv.jpg" alt="img2">
+        </a>
+        <a href="img/kanha.jpg">
+            <img src="img/kanha.jpg" alt="img3">
+        </a>
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" ></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery'));
+    </script>
+</body>
+</html>
